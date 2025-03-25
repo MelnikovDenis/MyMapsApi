@@ -1,0 +1,7 @@
+{
+  "JwtTokenServiceOptions": {
+    "Issuer": "MyMapsApi",
+    "SecretKey": "84ac66c87a304970b4de5b31e3b8ec1c",
+    "Lifetime": 86400
+  }
+}
