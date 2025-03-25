@@ -3,19 +3,24 @@ using MyMapsApi.App.Contracts.Dtos;
 using MyMapsApi.App.Contracts;
 using Microsoft.AspNetCore.Authorization;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.Extensions.Logging;
 
 namespace MyMapsApi.Controllers.Controllers;
 
 /// <summary>
 /// Контроллер для работы с постами
 /// </summary>
+/// <param name="logger">Логгер</param>
+/// <param name="postService">Сервис для работы с постами</param>
 [Route("api/posts")]
 [Authorize]
 [ApiController]
-public class PostsController(IPostService postService) : ControllerBase
+public class PostsController(IPostService postService, ILogger<PostsController> logger) : ControllerBase
 {
 
     private readonly IPostService _postService = postService;
+
+    private readonly ILogger<PostsController> _logger = logger;
 
     /// <summary>
     /// Создать пост
@@ -27,6 +32,8 @@ public class PostsController(IPostService postService) : ControllerBase
     [HttpPost("")]
     public async Task<ActionResult<PostInfoDto>> CreateAsync(CreatePostDto createPostDto, CancellationToken cancellationToken = default)
     {
+        _logger.LogInformation($"Обработка запроса {Request.Method}: {Request.Path.ToString()}");
+
         var authorName = User.FindFirst("name")?.Value
             ?? throw new ArgumentNullException("name", "Где твой name claim?");
 
@@ -44,6 +51,8 @@ public class PostsController(IPostService postService) : ControllerBase
     [HttpDelete("")]
     public async Task<IActionResult> DeleteAsync([FromQuery, Required] Guid postId, CancellationToken cancellationToken = default)
     {
+        _logger.LogInformation($"Обработка запроса {Request.Method}: {Request.Path.ToString()}");
+
         await _postService.DeleteAsync(postId, cancellationToken);
 
         return Ok();
@@ -57,6 +66,8 @@ public class PostsController(IPostService postService) : ControllerBase
     [HttpGet("")]
     public async Task<ActionResult<IEnumerable<PostInfoDto>>> GetAllAsync(CancellationToken cancellationToken = default)
     {
+        _logger.LogInformation($"Обработка запроса {Request.Method}: {Request.Path.ToString()}");
+
         var getAllResult = await _postService.GetAllAsync(cancellationToken);
 
         return StatusCode(getAllResult.StatusCode, getAllResult);
