@@ -32,7 +32,7 @@ public class AuthController(IAuthService authService, ILogger<AuthController> lo
     public async Task<ActionResult<OperationResult<string>>> LoginAsync(LoginOrRegisterDto loginOrRegisterDto,
         CancellationToken cancellationToken = default)
     {
-        _logger.LogInformation($"Обработка запроса {Request.Method}: {Request.Path.ToString()}");
+        _logger.LogInformation($"Обработка запроса {Request.Method}: {Request.Path}");
 
         var result = await _authService.LoginOrRegisterAsync(loginOrRegisterDto, cancellationToken);
 

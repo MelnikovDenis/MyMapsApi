@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyMapsApi.App.Contracts\MyMapsApi.App.Contracts.csproj" />
-    <ProjectReference Include="..\MyMapsApi.Infra.Contracts\MyMapsApi.Infra.Contracts.csproj" />
+    <ProjectReference Include="..\MyMapsApi.App.Infra.Contracts\MyMapsApi.App.Infra.Contracts.csproj" />
     <ProjectReference Include="..\MyMapsApi.Shared\MyMapsApi.Shared.csproj" />
   </ItemGroup>
 

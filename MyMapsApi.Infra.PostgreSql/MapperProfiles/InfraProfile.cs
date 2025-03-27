@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
+using MyMapsApi.App.Infra.Contracts.Dtos;
 using MyMapsApi.Core.Entities;
-using MyMapsApi.Infra.Contracts.Dtos;
 
 namespace MyMapsApi.Infra.PostgreSql.MapperProfiles;
 

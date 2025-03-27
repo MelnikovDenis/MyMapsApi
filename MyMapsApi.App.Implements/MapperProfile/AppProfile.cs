@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using MyMapsApi.App.Contracts.Dtos;
+using MyMapsApi.App.Infra.Contracts.Dtos;
 using MyMapsApi.Core.Entities;
-using MyMapsApi.Infra.Contracts.Dtos;
 using MyMapsApi.Shared;
 
 namespace MyMapsApi.App.Implements.MapperProfile;

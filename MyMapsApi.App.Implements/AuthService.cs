@@ -2,9 +2,9 @@
 using MyMapsApi.App.Contracts;
 using MyMapsApi.App.Contracts.Dtos;
 using MyMapsApi.App.Implements.TokenService;
+using MyMapsApi.App.Infra.Contracts;
+using MyMapsApi.App.Infra.Contracts.Dtos;
 using MyMapsApi.Core.Models;
-using MyMapsApi.Infra.Contracts;
-using MyMapsApi.Infra.Contracts.Dtos;
 using MyMapsApi.Shared;
 
 namespace MyMapsApi.App.Implements;

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MyMapsApi.Infra.Contracts;
+using MyMapsApi.App.Infra.Contracts;
 using MyMapsApi.Infra.PostgreSql.Extensions.ServiceCollection;
 using MyMapsApi.Infra.PostgreSql.MapperProfiles;
 using MyMapsApi.Infra.PostgreSql.Repos;

@@ -32,7 +32,7 @@ public class PostsController(IPostService postService, ILogger<PostsController> 
     [HttpPost("")]
     public async Task<ActionResult<PostInfoDto>> CreateAsync(CreatePostDto createPostDto, CancellationToken cancellationToken = default)
     {
-        _logger.LogInformation($"Обработка запроса {Request.Method}: {Request.Path.ToString()}");
+        _logger.LogInformation($"Обработка запроса {Request.Method}: {Request.Path}");
 
         var authorName = User.FindFirst("name")?.Value
             ?? throw new ArgumentNullException("name", "Где твой name claim?");
@@ -51,7 +51,7 @@ public class PostsController(IPostService postService, ILogger<PostsController> 
     [HttpDelete("")]
     public async Task<IActionResult> DeleteAsync([FromQuery, Required] Guid postId, CancellationToken cancellationToken = default)
     {
-        _logger.LogInformation($"Обработка запроса {Request.Method}: {Request.Path.ToString()}");
+        _logger.LogInformation($"Обработка запроса {Request.Method}: {Request.Path}");
 
         await _postService.DeleteAsync(postId, cancellationToken);
 
@@ -66,7 +66,7 @@ public class PostsController(IPostService postService, ILogger<PostsController> 
     [HttpGet("")]
     public async Task<ActionResult<IEnumerable<PostInfoDto>>> GetAllAsync(CancellationToken cancellationToken = default)
     {
-        _logger.LogInformation($"Обработка запроса {Request.Method}: {Request.Path.ToString()}");
+        _logger.LogInformation($"Обработка запроса {Request.Method}: {Request.Path}");
 
         var getAllResult = await _postService.GetAllAsync(cancellationToken);
 

@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMapsApi.Core", "MyMapsApi.Core\MyMapsApi.Core.csproj", "{7836ADC9-6596-4E90-A341-AC9DECC41E79}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra", "infra", "{5ADE8A5C-8AF4-41AD-A0E7-E77D54FD3BB7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMapsApi.Infra.Contracts", "MyMapsApi.Infra.Contracts\MyMapsApi.Infra.Contracts.csproj", "{C3B447C9-E834-407B-AB26-A955A75C3678}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMapsApi.Infra.PostgreSql", "MyMapsApi.Infra.PostgreSql\MyMapsApi.Infra.PostgreSql.csproj", "{9D807D5B-2BEB-46AF-96E9-86603CAAF901}"
 EndProject
@@ -23,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMapsApi.WebHost", "MyMaps
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMapsApi.Shared", "MyMapsApi.Shared\MyMapsApi.Shared.csproj", "{89AC8EF8-EA5E-43D7-9E29-99241E152333}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMapsApi.App.Infra.Contracts", "MyMapsApi.App.Infra.Contracts\MyMapsApi.App.Infra.Contracts.csproj", "{1D4664B6-96FE-40A9-87C7-88B0E335344E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,10 +33,6 @@ Global
 		{7836ADC9-6596-4E90-A341-AC9DECC41E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7836ADC9-6596-4E90-A341-AC9DECC41E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7836ADC9-6596-4E90-A341-AC9DECC41E79}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C3B447C9-E834-407B-AB26-A955A75C3678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3B447C9-E834-407B-AB26-A955A75C3678}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3B447C9-E834-407B-AB26-A955A75C3678}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3B447C9-E834-407B-AB26-A955A75C3678}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9D807D5B-2BEB-46AF-96E9-86603CAAF901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9D807D5B-2BEB-46AF-96E9-86603CAAF901}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D807D5B-2BEB-46AF-96E9-86603CAAF901}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,14 +57,18 @@ Global
 		{89AC8EF8-EA5E-43D7-9E29-99241E152333}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89AC8EF8-EA5E-43D7-9E29-99241E152333}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89AC8EF8-EA5E-43D7-9E29-99241E152333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D4664B6-96FE-40A9-87C7-88B0E335344E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D4664B6-96FE-40A9-87C7-88B0E335344E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D4664B6-96FE-40A9-87C7-88B0E335344E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D4664B6-96FE-40A9-87C7-88B0E335344E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C3B447C9-E834-407B-AB26-A955A75C3678} = {5ADE8A5C-8AF4-41AD-A0E7-E77D54FD3BB7}
 		{9D807D5B-2BEB-46AF-96E9-86603CAAF901} = {5ADE8A5C-8AF4-41AD-A0E7-E77D54FD3BB7}
 		{43D9FBC7-8218-422A-B344-535EC59D8651} = {3A91E9FD-94E4-447A-8C4A-AA20E5333059}
 		{C746B0D3-C7C0-4E6C-8EE6-3D158AD5A2B4} = {3A91E9FD-94E4-447A-8C4A-AA20E5333059}
+		{1D4664B6-96FE-40A9-87C7-88B0E335344E} = {3A91E9FD-94E4-447A-8C4A-AA20E5333059}
 	EndGlobalSection
 EndGlobal

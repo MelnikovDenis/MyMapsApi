@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using MyMapsApi.App.Contracts;
 using MyMapsApi.App.Contracts.Dtos;
+using MyMapsApi.App.Infra.Contracts;
+using MyMapsApi.App.Infra.Contracts.Dtos;
 using MyMapsApi.Core.Models;
-using MyMapsApi.Infra.Contracts;
-using MyMapsApi.Infra.Contracts.Dtos;
 
 namespace MyMapsApi.App.Implements;
 

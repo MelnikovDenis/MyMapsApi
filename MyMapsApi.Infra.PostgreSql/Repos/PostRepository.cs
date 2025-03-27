@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using MyMapsApi.App.Infra.Contracts;
+using MyMapsApi.App.Infra.Contracts.Dtos;
 using MyMapsApi.Core.Entities;
 using MyMapsApi.Core.Models;
-using MyMapsApi.Infra.Contracts;
-using MyMapsApi.Infra.Contracts.Dtos;
 
 namespace MyMapsApi.Infra.PostgreSql.Repos;
 
