@@ -4,6 +4,7 @@ using MyMapsApi.App.Contracts;
 using Microsoft.AspNetCore.Authorization;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.Extensions.Logging;
+using MyMapsApi.Core.Models;
 
 namespace MyMapsApi.Controllers.Controllers;
 
@@ -30,7 +31,7 @@ public class PostsController(IPostService postService, ILogger<PostsController> 
     /// <returns>Результат операции с созданным постом</returns>
     /// <exception cref="ArgumentNullException">Ошибка возникающая, если отсутствует claim с полем name</exception>
     [HttpPost("")]
-    public async Task<ActionResult<PostInfoDto>> CreateAsync(CreatePostDto createPostDto, CancellationToken cancellationToken = default)
+    public async Task<ActionResult<OperationResult<PostInfoDto>>> CreateAsync(CreatePostDto createPostDto, CancellationToken cancellationToken = default)
     {
         _logger.LogInformation($"Обработка запроса {Request.Method}: {Request.Path}");
 
@@ -64,7 +65,7 @@ public class PostsController(IPostService postService, ILogger<PostsController> 
     /// <param name="cancellationToken">Токен отмены асинхронной операции</param>
     /// <returns>Результат операции со списком всех постов</returns>
     [HttpGet("")]
-    public async Task<ActionResult<IEnumerable<PostInfoDto>>> GetAllAsync(CancellationToken cancellationToken = default)
+    public async Task<ActionResult<OperationResult<IEnumerable<PostInfoDto>>>> GetAllAsync(CancellationToken cancellationToken = default)
     {
         _logger.LogInformation($"Обработка запроса {Request.Method}: {Request.Path}");
 

@@ -93,11 +93,18 @@
 Возвращает пост в формате:  
 ```json
 {
-    "id": "uuid",
-    "longitude": 0.0,
-    "latitude": 0.0,
-    "commentary": "Текст",
-    "name": "Автор"
+  "data": {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "longitude": 0,
+    "latitude": 0,
+    "commentary": "string",
+    "name": "string"
+  },
+  "isSuccess": true,
+  "statusCode": 0,
+  "errors": [
+    "string"
+  ]
 }
 ```
 ### Удаление поста  
@@ -111,15 +118,22 @@
 **Endpoint:** `GET /api/posts`  
 Возвращает массив постов в формате:  
 ```json
-[
-  {
-    "id": "uuid",
-    "longitude": 0.0,
-    "latitude": 0.0,
-    "commentary": "Текст",
-    "name": "Автор"
-  }
-]
+{
+  "data": [
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "longitude": 0,
+      "latitude": 0,
+      "commentary": "string",
+      "name": "string"
+    }
+  ],
+  "isSuccess": true,
+  "statusCode": 0,
+  "errors": [
+    "string"
+  ]
+}
 ```
 
 **Примечание:** Все защищенные endpoints требуют JWT-токена в заголовке `Authorization`, например: `Authorization: Bearer {тут_ваш_токен}`.
