@@ -22,6 +22,6 @@ public class CreatePostDto
     /// <summary>
     /// Комментарий
     /// </summary>
-    [Required, MinLength(1)]
+    [Required, MinLength(1), MaxLength(100)]
     public required string Commentary { get; set; }
 }
