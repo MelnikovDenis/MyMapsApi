@@ -1,0 +1,163 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9">
+  <diagram name="Страница — 1" id="ZuyVTgnOZ_9e9CqJTq_Z">
+    <mxGraphModel dx="2261" dy="2013" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0IhUl0NS03IZPdmeIgKQ-10" value="Уровень ядра" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="290" width="205" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="0IhUl0NS03IZPdmeIgKQ-6" value="Уровень композиции" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="280" width="230" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="0IhUl0NS03IZPdmeIgKQ-2" value="Уровень презентации" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="120" width="210" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-24" value="Уровень приложения" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="170" width="430" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-1" value="Core" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="960" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="l_EI9kO1a7t3gWflV9ID-2" target="l_EI9kO1a7t3gWflV9ID-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="260" />
+              <mxPoint x="850" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-2" value="App.Contracts" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="l_EI9kO1a7t3gWflV9ID-3" target="l_EI9kO1a7t3gWflV9ID-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-25" value="Инфраструктурный уровень" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="505" width="460" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="l_EI9kO1a7t3gWflV9ID-3" target="0IhUl0NS03IZPdmeIgKQ-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="360" />
+              <mxPoint x="590" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-3" value="App.Implements" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="l_EI9kO1a7t3gWflV9ID-5" target="0IhUl0NS03IZPdmeIgKQ-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-5" value="Infra.PostgreSql" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="l_EI9kO1a7t3gWflV9ID-10" target="l_EI9kO1a7t3gWflV9ID-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="190" />
+              <mxPoint x="340" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-10" value="RestControllers" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="l_EI9kO1a7t3gWflV9ID-11" target="l_EI9kO1a7t3gWflV9ID-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="l_EI9kO1a7t3gWflV9ID-11" target="l_EI9kO1a7t3gWflV9ID-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="360" />
+              <mxPoint x="80" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="l_EI9kO1a7t3gWflV9ID-11" target="l_EI9kO1a7t3gWflV9ID-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="360" />
+              <mxPoint x="80" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-11" value="RestPostgreSQL_WebHost" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-160" y="330" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-23" value="Shared" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="740" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-31" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;dashed=1;" parent="1" source="l_EI9kO1a7t3gWflV9ID-30" target="l_EI9kO1a7t3gWflV9ID-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-30" value="Внешние зависимости, например: репозитории для подключения к БД, клиенты, для взаимодействия с другими системами и т.д." style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" parent="1" vertex="1">
+          <mxGeometry x="765" y="730" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-34" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;startFill=0;dashed=1;" parent="1" source="l_EI9kO1a7t3gWflV9ID-33" target="l_EI9kO1a7t3gWflV9ID-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-33" value="Общие компоненты, например: алгоритмы, которые используются много где, различные классы расширения, классы-хелперы. &lt;br&gt;&lt;br&gt;От этого компонента может зависеть любой проект&amp;nbsp;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" parent="1" vertex="1">
+          <mxGeometry x="850" y="-170" width="170" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-36" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;startFill=0;" parent="1" source="l_EI9kO1a7t3gWflV9ID-35" target="l_EI9kO1a7t3gWflV9ID-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-35" value="Внутренняя логика работы нашей системы, например: сервис авторизации, сервис работы с какой либо сущностью.&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Кроме того этот слой содержит так же свои и инфраструктурные контракты&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" parent="1" vertex="1">
+          <mxGeometry x="360" y="-65" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-38" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;dashed=1;" parent="1" source="l_EI9kO1a7t3gWflV9ID-37" target="0IhUl0NS03IZPdmeIgKQ-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-37" value="Корень композиции, зависит от всех имплементаций, собирает проект вместе" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-270" y="140" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-39" value="Внешний интерфейс системы, которые обращается к внутренним компонентам" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" parent="1" vertex="1">
+          <mxGeometry x="10" y="-40" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-40" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;startFill=0;" parent="1" source="l_EI9kO1a7t3gWflV9ID-39" target="0IhUl0NS03IZPdmeIgKQ-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="392" y="100" as="sourcePoint" />
+            <mxPoint x="429" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-41" value="Ядро приложения, основные сущности, перечисления, модели и т.д." style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1161" y="180" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="l_EI9kO1a7t3gWflV9ID-42" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startFill=0;dashed=1;" parent="1" source="l_EI9kO1a7t3gWflV9ID-41" target="0IhUl0NS03IZPdmeIgKQ-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="-3" as="sourcePoint" />
+            <mxPoint x="810" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0IhUl0NS03IZPdmeIgKQ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0IhUl0NS03IZPdmeIgKQ-1" target="l_EI9kO1a7t3gWflV9ID-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="920" y="360" />
+              <mxPoint x="920" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0IhUl0NS03IZPdmeIgKQ-1" value="App.Infra.Contracts" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0IhUl0NS03IZPdmeIgKQ-4" value="Infra.MongoDb" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="770" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0IhUl0NS03IZPdmeIgKQ-7" value="SoapMongoDb_WebHost" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-157.5" y="430" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0IhUl0NS03IZPdmeIgKQ-8" value="Проекты, окрашенные таким цветом иллюстрируют места, где можно легко подменить целый компонент целиком.&lt;br&gt;&lt;br&gt;Эти проекты будут иметь те же зависимости, что и окрашенные белым, но, чтобы не захламлять схему, эти зависимости опущены" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="-120" width="170" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="0IhUl0NS03IZPdmeIgKQ-9" value="SoapControllers" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="150" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
